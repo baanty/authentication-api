@@ -1,0 +1,6 @@
+com\ing\fraud\authentication\CustomerAuthenticationApi.class
+com\ing\fraud\authentication\service\AccountsService.class
+com\ing\fraud\authentication\config\AccountAuthenticationConfiguration.class
+com\ing\fraud\authentication\service\AccountUnblockerService.class
+com\ing\fraud\authentication\vo\AccountDetail.class
+com\ing\fraud\authentication\controller\AccountController.class
