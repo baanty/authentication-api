@@ -1,3 +1,2 @@
-implementationcom\ing\fraud\authentication\main\SSLCliAuthExample.class
-implementationcom\ing\fraud\authentication\main\ClientCustomSSL.class
-implementationcom\ing\fraud\authentication\main\SSLCliAuthExample$1.class
+com\ing\fraud\authentication\configuration\TestConfig.class
+com\ing\fraud\authentication\controller\AccountControllerTest.class

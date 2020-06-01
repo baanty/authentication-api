@@ -43,7 +43,7 @@ public class AccountController {
 	public String createAccount(@RequestParam int accountNumber, 
 							    @RequestParam String userName, 
 							    @RequestParam String password) throws ClientProtocolException, IOException {
-		StringBuilder fullClientMessage = new StringBuilder("account not created. ");
+		StringBuilder fullClientMessage = new StringBuilder("account not created.");
 		boolean doesAccountExist = accountsService.doesAccountExist(accountNumber);
 		
 		if  ( doesAccountExist ) {

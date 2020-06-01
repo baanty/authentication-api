@@ -1,10 +1,6 @@
 package com.ing.fraud.authentication.service;
 
-import java.io.IOException;
-
 import org.apache.http.HttpEntity;
-import org.apache.http.ParseException;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -20,7 +16,7 @@ public class AccountsService {
 	@Value("${account.service.url}")
 	String accountServiceUrl;
 	
-	public boolean doesAccountExist(int accountNumber) throws ClientProtocolException, IOException {
+	public boolean doesAccountExist(Integer accountNumber) {
 		try {
 			CloseableHttpClient httpClient = HttpClients.createDefault();
 			
@@ -31,7 +27,7 @@ public class AccountsService {
 			   if (entity != null) {
 			      return EntityUtils.toString(entity).startsWith("{\"iban\"");
 			   }
-		} catch (ParseException | IOException exception) {
+		} catch (Exception exception) {
 			return false;
 		}
 		return false;
